@@ -2,7 +2,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin"),
     MiniCssExtractPlugin = require("mini-css-extract-plugin"); 
 const { loader } = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-const Terser = require('terser-webpack-plugin'); 
+const Terser = require('terser-webpack-plugin');
 
 module.exports = {
     output: {
