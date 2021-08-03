@@ -15,6 +15,7 @@ html{
 body{
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
+    background-color: #221c34;
 }
 
 header{
@@ -29,7 +30,7 @@ header{
 }
 
     header img{
-        width: 4em;
+        width: 3em;
     }
 
     header span{
@@ -63,7 +64,6 @@ header{
         }
 
 main{
-    background-color: #221c34;
     height: 100vh;
 }
     main article{
@@ -104,6 +104,7 @@ main{
             filter: drop-shadow(0px 0px 5px);
         }
 
+    /*Start hidden div for ordering pizza */
     main div:nth-child(1){
         position: fixed;
         z-index: 11;
@@ -119,14 +120,30 @@ main{
         width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
         align-items: center;
     }
 
     main div:nth-child(1) section button{
-        width: 20em;
-        height: 5em;
+        width: 12em;
+        height: 3em;
+        margin-top: 6em;
     }
+
+    main div:nth-child(1) section article{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2em;
+        height: 70%;
+        justify-content: space-evenly;
+    }
+
+    main div:nth-child(1) section article h4{
+        font-size: 1.5em;
+        color: whitesmoke;
+    }
+    /* End hidden div for ordering pizza */
 
     #saludo{
         padding: 1em;
@@ -157,15 +174,11 @@ main{
             height: 3em;
             margin-top: 1em;
             background-color: #fb4734;
+            color: whitesmoke;
             border: none;
             border-radius: 10px;
             z-index: 2;
         }
-
-            #saludo button a{
-                text-decoration: none;
-                color: whitesmoke;
-            }
 
         #particles-js{
             position: absolute;
@@ -173,15 +186,75 @@ main{
             height: 100%;
             z-index: 1;
         }
+/* Start Promotions div */
+#promociones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+}
 
-#ordena-pizza{
-    background-color: #221c34;
-    height: 100vh;
+    #promociones h4{
+        color: whitesmoke;
+        font-size: 2em; 
+        margin-top: 2em;
+    }
+
+    #promociones section img{
+        width: 100%;
+        box-shadow: 0px 1px 10px black;
+    }
+/* End Promotions div */
+
+/* Start div pizzas */
+#especialidades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    gap: 1em; 
+}
+
+    #especialidades h4{
+        color: whitesmoke;
+        font-size: 2em;
+        margin-top: 2em;
+    }
+
+    #especialidades section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        #especialidades section img{
+            width: 100%;
+            box-shadow: 0px 1px 10px black;
+        }
+
+        #especialidades section h5{
+            color: #fb4734;
+            margin-top: 0.1em;
+            font-size: 1.5em;
+        }
+
+        #especialidades section p{
+            color: whitesmoke;
+        }
+/* End div pizzas */
+
+/* Start FOOTER */
+footer{
+    background-color: #fb4734;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 3em;
 }
 
-    #ordena-pizza h1{
-        color: whitesmoke;
+    footer p{
+        color: #FFBB00;
+        
     }
+/* End FOOTER */
