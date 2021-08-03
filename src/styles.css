@@ -22,9 +22,9 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 0.5em;
-    z-index: 10;
+    z-index: 20;
     box-shadow: 0px 1px 10px black;
-    position: absolute;
+    position: fixed;
     width: 100%;
 }
 
@@ -32,12 +32,12 @@ header{
         width: 4em;
     }
 
-    #menu-logo{
+    header span{
         color: #FFBB00;
-        font-size: 3em;
+        font-size: 2.2em;
         display: flex; 
         align-items: center;
-        margin-right: 0.5em;
+        margin-right: 0.3em;
     }
 
     nav{
@@ -47,7 +47,7 @@ header{
         width: 80vw;
         height: 100vh;
         background-color: #fb4734; 
-        z-index: 5;
+        z-index: 12;
         justify-content: space-evenly;
         align-items: center;
         opacity: 0.9;
@@ -65,7 +65,6 @@ header{
 main{
     background-color: #221c34;
     height: 100vh;
-    padding-top: 5em;
 }
     main article{
         display: flex;
@@ -73,8 +72,8 @@ main{
     }
         main article img{
             width: 30%;
-            margin-left: 1%;
-            margin-top: 3%;
+            margin-left: 7%;
+            margin-top: 27%;
             z-index: 2;
         }
 
@@ -82,8 +81,8 @@ main{
             font-family: 'Roboto', sans-serif;
             position: absolute;
             color: #fb4734;
-            margin-left: 27%;
-            margin-top: 15%;
+            margin-left: 32%;
+            margin-top: 38%;
             font-size: 5.5em;
             z-index: 1; 
         }
@@ -93,7 +92,7 @@ main{
             color: whitesmoke;
             position: absolute;
             margin-left: 34%;
-            margin-top: 6%;
+            margin-top: 29%;
             font-size: 3em;
         }
     main section{
@@ -102,9 +101,32 @@ main{
 
         main section img{
             width: 100%;
-            margin-top: 7%;
             filter: drop-shadow(0px 0px 5px);
         }
+
+    main div:nth-child(1){
+        position: fixed;
+        z-index: 11;
+        height: 100vh;
+        width: 100vw;
+        display: none;
+        padding: 1em;
+    }
+
+    main div:nth-child(1) section{
+        background-color: #fb4734;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    main div:nth-child(1) section button{
+        width: 20em;
+        height: 5em;
+    }
 
     #saludo{
         padding: 1em;
@@ -127,13 +149,13 @@ main{
             color: whitesmoke;
             font-size: 1.2em;
             text-align: center;
-            margin-top: 1em;
+            margin-top: 0.2em;
         }
 
         #saludo button{
             width: 10em;
             height: 3em;
-            margin-top: 2em;
+            margin-top: 1em;
             background-color: #fb4734;
             border: none;
             border-radius: 10px;
