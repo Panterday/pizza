@@ -13,7 +13,8 @@ export const animationsForPromociones = ()=>{
         },
         x: 50,
         opacity: 0,
-        duration: 1
+        duration: 1,
+        ease: 'Power2.easeOut'
     })
 
     gsap.from('#sect1',{
@@ -24,7 +25,8 @@ export const animationsForPromociones = ()=>{
         },
         x: -50,
         opacity: 0,
-        duration: 1
+        duration: 1,
+        ease: 'Power2.easeOut'
     })
 
     
