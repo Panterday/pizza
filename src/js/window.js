@@ -5,7 +5,7 @@ const windowLoaded = ()=>{
     window.addEventListener('load', ()=>{
         initParticles(); 
         animationsForPromociones(); 
-        /* window.location.href = ''; */
+        window.location.href = '#';
     }); 
 }
 

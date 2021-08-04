@@ -9,7 +9,7 @@ export const animationsForPromociones = ()=>{
         scrollTrigger: {
             trigger: '#promociones h4',
             markers: true,
-            start: 'top 80%'
+            start: 'top 50%'
         },
         x: 50,
         opacity: 0,
@@ -20,9 +20,9 @@ export const animationsForPromociones = ()=>{
         scrollTrigger: {
             trigger: '#sect1',
             markers: true,
-            start: 'top 80%'
+            start: 'top 50%'
         },
-        x: 50,
+        x: -50,
         opacity: 0,
         duration: 1
     })
