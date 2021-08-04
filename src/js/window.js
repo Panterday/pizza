@@ -1,9 +1,11 @@
+import { animationsForPromociones } from "./animationsForPromociones";
 import { initParticles } from "./particles";
 
 const windowLoaded = ()=>{
     window.addEventListener('load', ()=>{
         initParticles(); 
-        window.location.href = '#';
+        animationsForPromociones(); 
+        /* window.location.href = ''; */
     }); 
 }
 
