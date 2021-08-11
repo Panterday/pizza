@@ -60,7 +60,7 @@ module.exports = {
                 }
             },
             {
-                test: /\.(svg|eot|woff|ttf|woff2)$/,
+                test: /\.(eot|woff|ttf|woff2)$/,
                 loader: "file-loader",
                 options: {
                     name: "[path][name].[ext]"

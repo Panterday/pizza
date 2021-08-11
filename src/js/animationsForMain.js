@@ -4,7 +4,7 @@ let state = 0;
 
 const animationsForMain = ()=>{
 
-    const btnOrdena = document.querySelector('main div:nth-child(1) button')
+    const btnOrdena = document.querySelector('#volver-logo')
     const divOrdena = document.querySelector('main div:nth-child(1)')
     const btnMain = document.querySelector('#saludo button')
 
