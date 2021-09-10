@@ -3,11 +3,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export const animationsForPromociones = ()=>{
-
-    gsap.from('#promociones h4',{
+export const animationsForEspecialidades = ()=>{
+    gsap.from('#especialidades h4',{
         scrollTrigger: {
-            trigger: '#promociones h4',
+            trigger: '#especialidades h4',
             start: 'top 70%'
         },
         x: 50,
@@ -16,9 +15,9 @@ export const animationsForPromociones = ()=>{
         ease: 'Power2.easeOut'
     })
 
-    gsap.from('#sect1',{
+    gsap.from('#espeSect1',{
         scrollTrigger: {
-            trigger: '#sect1',
+            trigger: '#espeSect1',
             start: 'top 70%'
         },
         x: -50,
@@ -27,9 +26,9 @@ export const animationsForPromociones = ()=>{
         ease: 'Power2.easeOut'
     })
 
-    gsap.from('#sect2',{
+    gsap.from('#espeSect2',{
         scrollTrigger: {
-            trigger: '#sect2',
+            trigger: '#espeSect2',
             start: 'top 70%'
         },
         x: 50,
@@ -38,9 +37,9 @@ export const animationsForPromociones = ()=>{
         ease: 'Power2.easeOut'
     })
 
-    gsap.from('#sect3',{
+    gsap.from('#espeSect3',{
         scrollTrigger: {
-            trigger: '#sect3',
+            trigger: '#espeSect3',
             start: 'top 70%'
         },
         x: -50,
@@ -49,9 +48,9 @@ export const animationsForPromociones = ()=>{
         ease: 'Power2.easeOut'
     })
 
-    gsap.from('#sect4',{
+    gsap.from('#espeSect4',{
         scrollTrigger: {
-            trigger: '#sect4',
+            trigger: '#espeSect4',
             start: 'top 70%'
         },
         x: 50,
@@ -59,17 +58,4 @@ export const animationsForPromociones = ()=>{
         duration: 1,
         ease: 'Power2.easeOut'
     })
-
-    gsap.from('#sect5',{
-        scrollTrigger: {
-            trigger: '#sect5',
-            start: 'top 70%'
-        },
-        x: -50,
-        opacity: 0,
-        duration: 1,
-        ease: 'Power2.easeOut'
-    })
-
-    
 }

@@ -1,10 +1,12 @@
+import { animationsForEspecialidades } from "./animationsForEspecialidades";
 import { animationsForPromociones } from "./animationsForPromociones";
 import { initParticles } from "./particles";
 
 const windowLoaded = ()=>{
     window.addEventListener('load', ()=>{
         initParticles(); 
-        animationsForPromociones(); 
+        animationsForPromociones();
+        animationsForEspecialidades(); 
         window.location.href = '#';
     }); 
 }
